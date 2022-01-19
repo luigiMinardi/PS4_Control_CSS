@@ -12,9 +12,7 @@ body {
 
 .grip {
     width: 5.5em;
-    height: 15em;
-
-    z-index: -1;
+    height: 16em;
 
     background-color: black;
 
@@ -43,21 +41,51 @@ body {
 
 .leftGrip {
     transform: rotate(10deg);
-    border-radius: 50% 0 50% 50%;
+    border-radius: 50% 45% 50% 50%;
 }
 
 .rightGrip {
     transform: rotate(-10deg);
-    border-radius: 0% 50% 50% 50%;
+    border-radius: 45% 50% 50% 50%;
 
 }
+
+.buttonCircle {
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+
+    background-color: firebrick;
+    justify-self: flex-start;
+    align-self: flex-start;
+
+    margin-bottom: 2em;
+}
+
+.shoulder {
+    width: 4em;
+    height: 1.2em;
+
+    background-color: gray;
+
+    margin-left: 1em;
+    margin-bottom: 1em;
+
+    transform: rotate(-10deg);
+
+}
+
+.shoulderRight {
+    transform: rotate(10deg);
+}
+
 
 /* Middle */
 
 .middle {
     margin-top: .5em;
     width: 13em;
-    height: 8em;
+    height: 9em;
     background-color: darkblue;
 
     display: flex;
@@ -70,11 +98,19 @@ body {
 }
 
 .ovalButton {
+    margin-top: 1em;
     width: 1em;
     height: 1.6em;
     border-radius: 40%;
 
     background-color: yellow;
+}
+
+.leftOvalButton {
+    margin-left: .3em;
+}
+.rightOvalButton {
+    margin-right: .3em;
 }
 
 .touchpad {
