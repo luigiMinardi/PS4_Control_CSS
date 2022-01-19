@@ -1,0 +1,137 @@
+body {
+    font-family: sans-serif;
+}
+
+.control {
+    margin-left: 1em;
+
+    display: flex;
+    flex-direction: row;
+}
+/* Grip */
+
+.grip {
+    width: 5.5em;
+    height: 15em;
+
+    z-index: -1;
+
+    background-color: black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.bottomGrip {
+    width: 5.5em;
+    height: 6em;
+    border-radius: 0 0 50% 50%;
+
+    background-color: darkred;
+    display: flex;
+    flex-direction: row;
+}
+
+.semiCircle {
+    width: 5.5em;
+    height: 3.5em;
+    border-radius: 0 0 30% 30%;
+
+    background-color: red;
+}
+
+.leftGrip {
+    transform: rotate(10deg);
+    border-radius: 50% 0 50% 50%;
+}
+
+.rightGrip {
+    transform: rotate(-10deg);
+    border-radius: 0% 50% 50% 50%;
+
+}
+
+/* Middle */
+
+.middle {
+    margin-top: .5em;
+    width: 13em;
+    height: 8em;
+    background-color: darkblue;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.topSide {
+    display: flex;
+    justify-content: space-around;
+}
+
+.ovalButton {
+    width: 1em;
+    height: 1.6em;
+    border-radius: 40%;
+
+    background-color: yellow;
+}
+
+.touchpad {
+    width: 9em;
+    height: 5em;
+    border-radius: 10%;
+
+    background-color: cyan;
+}
+
+/* Bottom Side */
+
+.bottomSide {
+    margin-top: .5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Center */
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.dots {
+    font-size: xx-small;
+}
+
+.button {
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+
+    background-color: coral;
+}
+
+/* Analogics */
+
+.analogCircle {
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+
+    background-color: aquamarine;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.analog {
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 50%;
+
+    background-color: black;
+}
