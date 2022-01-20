@@ -11,10 +11,14 @@ body {
 /* Grip */
 
 .grip {
+    /**/
+    z-index: -1;
+    /**/
+
     width: 5.5em;
     height: 16em;
 
-    background-color: black;
+    background-color: red;
 
     display: flex;
     flex-direction: column;
@@ -23,19 +27,18 @@ body {
 
 .bottomGrip {
     width: 5.5em;
-    height: 6em;
+    height: 7em;
     border-radius: 0 0 50% 50%;
-
-    background-color: darkred;
+    background: linear-gradient(0deg, darkred, darkred 90%, red);
     display: flex;
     flex-direction: row;
+
 }
 
 .semiCircle {
     width: 5.5em;
-    height: 3.5em;
+    height: 4.5em;
     border-radius: 0 0 30% 30%;
-
     background-color: red;
 }
 
@@ -86,7 +89,7 @@ body {
     margin-top: .5em;
     width: 13em;
     height: 9em;
-    background-color: darkblue;
+    background-color: red;
 
     display: flex;
     flex-direction: column;
@@ -98,12 +101,16 @@ body {
 }
 
 .ovalButton {
-    margin-top: 1em;
-    width: 1em;
-    height: 1.6em;
+    margin-top: 1rem;
+    width: 1rem;
+    height: 1.6rem;
     border-radius: 40%;
 
-    background-color: yellow;
+    background-color: black;
+
+    color: gray;
+    font-size: xx-small;
+    text-align: center;
 }
 
 .leftOvalButton {
@@ -118,7 +125,7 @@ body {
     height: 5em;
     border-radius: 10%;
 
-    background-color: cyan;
+    background: linear-gradient(0deg, black 70%, blue 78%, gray 90%, black 100%);
 }
 
 /* Bottom Side */
@@ -147,7 +154,7 @@ body {
     height: 1em;
     border-radius: 50%;
 
-    background-color: coral;
+    background-color: black;
 }
 
 /* Analogics */
@@ -157,8 +164,8 @@ body {
     height: 5em;
     border-radius: 50%;
 
-    background-color: aquamarine;
-
+    background-color: red;
+    border: .1em solid lightsalmon;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,4 +177,5 @@ body {
     border-radius: 50%;
 
     background-color: black;
+    background: radial-gradient(black, black 40%, white 45%, black 48%, white 100%);
 }
