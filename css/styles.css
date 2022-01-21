@@ -11,9 +11,6 @@ body {
 /* Grip */
 
 .grip {
-    /**/
-    z-index: -1;
-    /**/
 
     width: 5.5em;
     height: 16em;
@@ -25,9 +22,32 @@ body {
     justify-content: end;
 }
 
+.red {
+    width: 1em;
+    height: 1.2em;
+    background-color: red;
+
+    transform: rotate(-10deg);
+    position: absolute;
+    margin-bottom: 6.96em;
+    margin-left: 5em;
+}
+
+.rightRed {
+    width: 1em;
+    height: 2.6em;
+    background: linear-gradient(0deg, red, red 59%, transparent 60%);
+    transform: rotate(10deg);
+    
+    position: absolute;
+
+    margin-right: 5em;
+    margin-bottom: 6.9em;
+}
+
 .bottomGrip {
     width: 5.5em;
-    height: 7em;
+    height: 8em;
     border-radius: 0 0 50% 50%;
     background: linear-gradient(0deg, darkred, darkred 90%, red);
     display: flex;
@@ -53,35 +73,137 @@ body {
 
 }
 
-.buttonCircle {
-    width: 6em;
-    height: 6em;
-    border-radius: 50%;
-
-    background-color: firebrick;
-    justify-self: flex-start;
-    align-self: flex-start;
-
-    margin-bottom: 2em;
-}
-
 .shoulder {
-    width: 4em;
+    z-index: -1;
+
+    width: 3.5em;
     height: 1.2em;
 
     background-color: gray;
 
-    margin-left: 1em;
-    margin-bottom: 1em;
+    margin-bottom: .5em;
 
     transform: rotate(-10deg);
-
 }
 
 .shoulderRight {
+    margin-left: 1em;
+
+    transform: rotate(10deg);
+    border-radius: 40% 70% 0 0;
+}
+
+.shoulderLeft {
+    margin-left: 1em;
+    border-radius: 70% 40% 0 0;
+}
+
+/* Buttons */
+
+.buttonCircle {
+    margin-top: .5em;
+
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+
+    background-color: red;
+    justify-self: flex-start;
+    align-self: flex-start;
+
+    border: .1em solid lightcoral;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+/* Left Buttons */
+
+.buttonCircleLeft {
+    transform: rotate(-10deg);
+}
+
+.tag {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.tagButton {
+    width: 0;
+    height: 0;
+
+    border-top: .7em solid transparent;
+    border-bottom: .7em solid transparent;
+    
+    border-left: .7em solid black;
+
+    margin: 0;
+    padding: 0;
+}
+
+.tagSquare {
+    width: 1.2em;
+    height: 1.4em;
+    background: black;
+
+    border-radius: 20% 0 0 20%;
+}
+
+.tagArrow {
+    width: 0;
+    height: 0;
+
+    border-top:  .4em solid transparent;
+    border-bottom:  .4em solid transparent; 
+    
+    border-right: .4em solid lightcoral; 
+    
+    margin-right: .2em;
+}
+
+.topTag {
+    transform: rotate(90deg);
+}
+
+.rightTag {
+    transform: rotate(180deg);
+}
+
+.bottomTag {
+    transform: rotate(270deg);
+}
+
+.spacerLeft {
+    width: 1em;
+}
+
+.spacerCenterLeft {
+    width: .3em;
+}
+
+
+/* Right Buttons*/
+
+.buttonCircleRight {
     transform: rotate(10deg);
 }
 
+.button {
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+
+    background-color: black;
+}
+
+.spacerRight {
+    width: 2em;
+}
 
 /* Middle */
 
@@ -91,6 +213,7 @@ body {
     height: 9em;
     background-color: red;
 
+    padding-left: .5em;
     display: flex;
     flex-direction: column;
 }
@@ -149,7 +272,7 @@ body {
     font-size: xx-small;
 }
 
-.button {
+.PSButton {
     width: 1em;
     height: 1em;
     border-radius: 50%;
