@@ -199,23 +199,49 @@ body {
     border-radius: 50%;
 
     background-color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button img {
+    width: 1.5em;
+    height: auto;
 }
 
 .spacerRight {
     width: 2em;
 }
 
+.xButton {
+    filter: invert(35%) sepia(90%) saturate(3203%) hue-rotate(220deg) brightness(102%) contrast(98%);
+}
+
+.oButton {
+    filter: invert(47%) sepia(53%) saturate(4519%) hue-rotate(335deg) brightness(99%) contrast(97%);
+}
+
+.triangleButton {
+    filter: invert(57%) sepia(92%) saturate(409%) hue-rotate(90deg) brightness(101%) contrast(99%);
+}
+
+.squareButton {
+    filter: invert(44%) sepia(8%) saturate(7498%) hue-rotate(295deg) brightness(103%) contrast(105%);
+}
+
 /* Middle */
 
 .middle {
     margin-top: .5em;
-    width: 13em;
+    width: 14em;
     height: 9em;
     background-color: red;
 
-    padding-left: .5em;
+    padding-left: .7em;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .topSide {
@@ -223,17 +249,22 @@ body {
     justify-content: space-around;
 }
 
+.oval {
+    z-index: 1;
+
+    margin: .2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 .ovalButton {
-    margin-top: 1rem;
     width: 1rem;
     height: 1.6rem;
     border-radius: 40%;
 
     background-color: black;
-
-    color: gray;
-    font-size: xx-small;
-    text-align: center;
 }
 
 .leftOvalButton {
@@ -241,6 +272,12 @@ body {
 }
 .rightOvalButton {
     margin-right: .3em;
+}
+
+.ovalText {
+    margin: 1.5em 0 0 0;
+    font-size: xx-small;
+    color: gray;
 }
 
 .touchpad {
@@ -263,21 +300,34 @@ body {
 
 .center {
     display: flex;
+    
     flex-direction: column;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
 }
 
 .dots {
-    font-size: xx-small;
+    width: 2em;
 }
 
 .PSButton {
-    width: 1em;
-    height: 1em;
+    margin-top: .5em;
+
+    width: 1.3em;
+    height: 1.3em;
     border-radius: 50%;
 
     background-color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 1em;
+    height: auto;
+    filter: invert(100%) sepia(0%) saturate(7493%) hue-rotate(115deg) brightness(96%) contrast(106%);
 }
 
 /* Analogics */
@@ -302,3 +352,12 @@ body {
     background-color: black;
     background: radial-gradient(black, black 40%, white 45%, black 48%, white 100%);
 }
+
+.leftAnalog {
+    margin-right: .8em;
+}
+
+.rightAnalog {
+    margin-left: .8em;
+}
+
