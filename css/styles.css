@@ -79,16 +79,15 @@ body {
     width: 5.5em;
     height: 8em;
     border-radius: 0 0 50% 50%;
-    background: linear-gradient(0deg, darkred, darkred 90%, red);
+    background: linear-gradient(0deg, rgb(37, 0, 0), darkred 20%, darkred 90%, red);
     display: flex;
     flex-direction: row;
-
 }
 
 .semiCircle {
     width: 5.5em;
-    height: 4.5em;
-    border-radius: 0 0 30% 30%;
+    height: 6em;
+    border-radius: 0 0 2.5em 2.5em;
     background-color: red;
 }
 
