@@ -15,22 +15,52 @@ body {
     width: 5.5em;
     height: 16em;
 
-    background-color: red;
+    background: linear-gradient(0deg,red, red 95%, transparent 100%);
 
     display: flex;
     flex-direction: column;
     justify-content: end;
 }
 
-.red {
-    width: 1em;
-    height: 1.2em;
+.topLeftRed {
+    width: .4em;
+    height: .4em;
+
+    z-index: -2;
+
+    background-color: red;
+
+    transform: rotate(-10deg);
+
+    position: absolute;
+    margin-bottom: 14.8em;
+    margin-left: 4.2em;
+}
+
+.topRightRed {
+    width: .4em;
+    height: .5em;
+
+    z-index: -2;
+
+    background-color: red;
+
+    transform: rotate(10deg);
+
+    position: absolute;
+    margin-bottom: 14.7em;
+    margin-left: 1em;
+}
+
+.leftRed {
+    width: .6em;
+    height: 1.5em;
     background-color: red;
 
     transform: rotate(-10deg);
     position: absolute;
-    margin-bottom: 6.96em;
-    margin-left: 5em;
+    margin-bottom: 7em;
+    margin-left: 5.3em;
 }
 
 .rightRed {
@@ -86,17 +116,23 @@ body {
     transform: rotate(-10deg);
 }
 
-.shoulderRight {
+.shoulderLeft {
     margin-left: 1em;
+
+    border-radius: 70% 40% 0 0;
+
+    background: linear-gradient(-10deg, red 30%, gray 45%, gray 65%, rgb(56, 56, 56) 80%, rgb(56, 56, 56) 100%);
+}
+
+.shoulderRight {
+    margin-left: .9em;
+
+    background: linear-gradient(10deg, red 30%, gray 45%, gray 65%, rgb(56, 56, 56) 80%, rgb(56, 56, 56) 100%);
 
     transform: rotate(10deg);
     border-radius: 40% 70% 0 0;
 }
 
-.shoulderLeft {
-    margin-left: 1em;
-    border-radius: 70% 40% 0 0;
-}
 
 /* Buttons */
 
