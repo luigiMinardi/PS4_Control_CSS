@@ -1,7 +1,7 @@
 body {
     font-family: sans-serif;
     background-color: #282a36;
-    transition: all 1s ease-in-out;
+    /* transition: all 1s ease-in-out; */
 
     width: 95vw;
     height: 95vh;
@@ -471,3 +471,44 @@ body {
     margin-left: .8em;
 }
 
+/* Television */
+
+.television {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.screen {
+    width: 18em;
+    height: 10em;
+    background-color: black;
+    border: .5em solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.legTelevision {
+    width: .6em;
+    height: 1em;
+    background-color: black;
+}
+
+.footTelevision {
+    width: 4em;
+    height: 2em;
+    border-radius: 50%;
+    background: radial-gradient(black 25%, gray);
+
+    display: flex;
+    justify-content: center;
+}
+
+.legInsideFootTelevision {
+    width: .6em;
+    height: 1em;
+
+    background-color: black;
+}

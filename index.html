@@ -10,97 +10,110 @@
 </head>
 
 <body>
-    <img width="400px" src="img/example.jpg" id="example">
-    <section class="circle">
-        <section class="control">
-            <section class="grip leftGrip">
-                <div class="shoulder shoulderLeft"></div>
-                <div class="topLeftRed"></div>
-                <div class="buttonCircle buttonCircleLeft">
-                    <div class="spacerLeft"></div>
-                    <div class="tag topTag">
-                        <div class="tagArrow"></div>
-                        <div class="tagSquare"></div>
-                        <div class="tagButton"></div>
-                    </div>
-                    <div class="spacerLeft"></div>
-                    <div class="tag leftTag">
-                        <div class="tagArrow"></div>
-                        <div class="tagSquare"></div>
-                        <div class="tagButton"></div>
-                    </div>
-                    <div class="spacerCenterLeft"></div>
-                    <div class="tag rightTag">
-                        <div class="tagArrow"></div>
-                        <div class="tagSquare"></div>
-                        <div class="tagButton"></div>
-                    </div>
-                    <div class="spacerLeft"></div>
-                    <div class="tag bottomTag">
-                        <div class="tagArrow"></div>
-                        <div class="tagSquare"></div>
-                        <div class="tagButton"></div>
-                    </div>
-                    <div class="spacerLeft"></div>
-                </div>
-                <div class="leftRed"></div>
-                <div class="bottomGrip">
-                    <div class="semiCircle"></div>
-                </div>
-            </section>
-            <section class="middle">
-                <section class="topSide">
-                    <div class="oval">
-                        <p class="ovalText">SHARE</p>
-                        <div class="ovalButton leftOvalButton" onclick="copyURL()"></div>
-                    </div>
-                    <div id="touchpad"></div>
-                    <div class="oval">
-                        <p class="ovalText">OPTIONS</p>
-                        <div class="ovalButton rightOvalButton" onclick="showExample()"></div>
-                    </div>
-                </section>
-                <section class="bottomSide">
-                    <div class="analogCircle leftAnalog">
-                        <div class="analog"></div>
-                    </div>
-                    <div class="center">
-                        <img src="img/dots.png" alt="Dots" class="dots">
-                        <div class="PSButton" onclick="turnOn()">
-                            <img class="logo" src="img/logo.png" alt="PlayStation Logo">
+    <section class="all">
+        <section class="television">
+            <div class="screen">
+                <img width="auto" height="160em" src="img/example.jpg" id="example">
+            </div>
+            <div class="legTelevision"></div>
+            <div class="footTelevision">
+                <div class="legInsideFootTelevision"></div>
+            </div>
+        </section>
+        <section class="circle">
+            <section class="control">
+                <section class="grip leftGrip">
+                    <div class="shoulder shoulderLeft"></div>
+                    <div class="topLeftRed"></div>
+                    <div class="buttonCircle buttonCircleLeft">
+                        <div class="spacerLeft"></div>
+                        <div class="tag topTag">
+                            <div class="tagArrow"></div>
+                            <div class="tagSquare"></div>
+                            <div class="tagButton"></div>
                         </div>
+                        <div class="spacerLeft"></div>
+                        <div class="tag leftTag">
+                            <div class="tagArrow"></div>
+                            <div class="tagSquare"></div>
+                            <div class="tagButton"></div>
+                        </div>
+                        <div class="spacerCenterLeft"></div>
+                        <div class="tag rightTag">
+                            <div class="tagArrow"></div>
+                            <div class="tagSquare"></div>
+                            <div class="tagButton"></div>
+                        </div>
+                        <div class="spacerLeft"></div>
+                        <div class="tag bottomTag">
+                            <div class="tagArrow"></div>
+                            <div class="tagSquare"></div>
+                            <div class="tagButton"></div>
+                        </div>
+                        <div class="spacerLeft"></div>
                     </div>
-                    <div class="analogCircle rightAnalog">
-                        <div class="analog"></div>
+                    <div class="leftRed"></div>
+                    <div class="bottomGrip">
+                        <div class="semiCircle"></div>
                     </div>
                 </section>
-            </section>
-            <section class="grip rightGrip">
-                <div class="shoulder shoulderRight"></div>
-                <div class="topRightRed"></div>
-                <div class="buttonCircle buttonCircleRight">
-                    <div class="spacerRight"></div>
-                    <div class="button" onclick="bgGreen()">
-                        <img class="triangleButton" src="img/triangle.png" alt="X Button">
+
+                <section class="middle">
+                    <section class="topSide">
+                        <div class="oval">
+                            <p class="ovalText">SHARE</p>
+                            <div class="ovalButton leftOvalButton" onclick="copyURL()"></div>
+                        </div>
+                        <div id="touchpad"></div>
+                        <div class="oval">
+                            <p class="ovalText">OPTIONS</p>
+                            <div class="ovalButton rightOvalButton" onclick="showExample()"></div>
+                        </div>
+                    </section>
+
+                    <section class="bottomSide">
+                        <div class="analogCircle leftAnalog">
+                            <div class="analog"></div>
+                        </div>
+                        <div class="center">
+                            <img src="img/dots.png" alt="Dots" class="dots">
+                            <div class="PSButton" onclick="turnOn()">
+                                <img class="logo" src="img/logo.png" alt="PlayStation Logo">
+                            </div>
+                        </div>
+                        <div class="analogCircle rightAnalog">
+                            <div class="analog"></div>
+                        </div>
+                    </section>
+                </section>
+
+                <section class="grip rightGrip">
+                    <div class="shoulder shoulderRight"></div>
+                    <div class="topRightRed"></div>
+                    <div class="buttonCircle buttonCircleRight">
+                        <div class="spacerRight"></div>
+                        <div class="button" onclick="bgGreen()">
+                            <img class="triangleButton" src="img/triangle.png" alt="X Button">
+                        </div>
+                        <div class="spacerRight"></div>
+                        <div class="button" onclick="bgPink()">
+                            <img class="squareButton" src="img/square.png" alt="X Button">
+                        </div>
+                        <div class="spacerRight"></div>
+                        <div class="button" onclick="bgRed()">
+                            <img class="oButton" src="img/O.png" alt="X Button">
+                        </div>
+                        <div class="spacerRight"></div>
+                        <div class="button" onclick="bgBlue()">
+                            <img class="xButton" src="img/X.png" alt="X Button">
+                        </div>
+                        <div class="spacerRight"></div>
                     </div>
-                    <div class="spacerRight"></div>
-                    <div class="button" onclick="bgPink()">
-                        <img class="squareButton" src="img/square.png" alt="X Button">
+                    <div class="rightRed"></div>
+                    <div class="bottomGrip">
+                        <div class="semiCircle"></div>
                     </div>
-                    <div class="spacerRight"></div>
-                    <div class="button" onclick="bgRed()">
-                        <img class="oButton" src="img/O.png" alt="X Button">
-                    </div>
-                    <div class="spacerRight"></div>
-                    <div class="button" onclick="bgBlue()">
-                        <img class="xButton" src="img/X.png" alt="X Button">
-                    </div>
-                    <div class="spacerRight"></div>
-                </div>
-                <div class="rightRed"></div>
-                <div class="bottomGrip">
-                    <div class="semiCircle"></div>
-                </div>
+                </section>
             </section>
         </section>
     </section>
