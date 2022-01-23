@@ -117,10 +117,14 @@ body {
 
 .shoulderLeft {
     margin-left: 1em;
-
+    
     border-radius: 70% 40% 0 0;
-
+    
     background: linear-gradient(-10deg, red 30%, gray 45%, gray 65%, rgb(56, 56, 56) 80%, rgb(56, 56, 56) 100%);
+}
+
+.shoulderLeft:hover {
+    transform: rotate(-10deg) scale(.9);
 }
 
 .shoulderRight {
@@ -132,6 +136,9 @@ body {
     border-radius: 40% 70% 0 0;
 }
 
+.shoulderRight:hover {
+    transform: rotate(10deg) scale(.9);
+}
 
 /* Buttons */
 
@@ -168,6 +175,10 @@ body {
     justify-content: center;
 }
 
+.tag:hover {
+    transform: scale(.9);
+}
+
 .tagButton {
     width: 0;
     height: 0;
@@ -189,6 +200,14 @@ body {
     border-radius: 20% 0 0 20%;
 }
 
+.tagSquare:hover + .tagButton {
+    border-left: .7em solid rgb(48, 47, 47);
+}
+
+.tagSquare:hover {
+    background-color: rgb(48, 47, 47);
+}
+
 .tagArrow {
     width: 0;
     height: 0;
@@ -205,12 +224,24 @@ body {
     transform: rotate(90deg);
 }
 
+.topTag:hover {
+    transform: rotate(90deg) scale(.9);
+}
+
 .rightTag {
     transform: rotate(180deg);
 }
 
+.rightTag:hover {
+    transform: rotate(180deg) scale(.9);
+}
+
 .bottomTag {
     transform: rotate(270deg);
+}
+
+.bottomTag:hover {
+    transform: rotate(270deg) scale(.9);
 }
 
 .spacerLeft {
@@ -238,6 +269,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.button:hover {
+    background-color: rgb(48, 47, 47);
+    transform: scale(.9);
 }
 
 .button img {
@@ -302,6 +338,11 @@ body {
     background-color: black;
 }
 
+.ovalButton:hover {
+    background-color: rgb(48, 47, 47);
+    transform: scale(.9);
+}
+
 .leftOvalButton {
     margin-left: .3em;
 }
@@ -357,6 +398,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}   
+
+.PSButton:hover {
+    background-color: rgb(48, 47, 47);
+    transform: scale(.9);
 }
 
 .logo {
