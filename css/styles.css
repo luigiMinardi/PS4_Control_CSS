@@ -14,6 +14,8 @@ body {
 
 #example {
     display: none;
+    height: 10em;
+    width: auto;
 }
 
 .control {
@@ -517,7 +519,7 @@ body {
     background-color: black;
 }
 
-.hdmiText {
+#hdmiText {
     margin-bottom: 7em;
     margin-left: 13.5em;
 
@@ -535,7 +537,7 @@ body {
     border: .1em solid orangered;
 }
 
-.hdmi {
+#hdmi {
     width: 6em;
     height: 3em;
 
@@ -560,4 +562,10 @@ body {
     60% {
     opacity: 0;
     }
+}
+
+#PS4Start {
+    height: 10em;
+    width: auto;
+    display: none;
 }
