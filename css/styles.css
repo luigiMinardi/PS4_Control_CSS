@@ -3,8 +3,8 @@ body {
     background-color: #282a36;
     transition: all 1s ease-in-out;
 
-    width: 95vw;
-    height: 95vh;
+    width: 98vw;
+    height: 98vh;
 
     display: flex;
     flex-direction: column;

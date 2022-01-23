@@ -34,6 +34,7 @@ function showExample() {
     let example = document.getElementById('example')
     let hdmi = document.getElementById('hdmi')
     let hdmiText = document.getElementById('hdmiText')
+    let PS4Start = document.getElementById('PS4Start')
     if (hdmi.style.display == "flex") {
         alert("Turn on the ps4 before clicking to see the options")
     } else {
@@ -66,7 +67,7 @@ function turnOn() {
         PS4Start.src = "img/ps4_start.gif";
     } else {
         touchpad.style.background = "linear-gradient(0deg, black 70%, blue 78%, gray 90%, black 100%)";
-        ps4Start.style.display = "unset";
+        PS4Start.style.display = "unset";
         hdmi.style.display = "none";
         hdmiText.style.display = "none";
         setTimeout(function () {
