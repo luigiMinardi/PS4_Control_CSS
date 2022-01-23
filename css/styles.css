@@ -20,6 +20,17 @@ body {
     display: flex;
     flex-direction: row;
 }
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30em;
+    height: 20em;
+    border-radius: 50%;
+    background-color: rgba(224, 224, 224, 0.171);
+    border: .1em solid rgba(255, 255, 255, 0.192);
+}
 /* Grip */
 
 .grip {
@@ -27,12 +38,79 @@ body {
     width: 5.5em;
     height: 16em;
 
-    background: linear-gradient(0deg,red, red 95%, transparent 100%);
+    background: linear-gradient(0deg,red, red 97%, transparent 98%);
 
     display: flex;
     flex-direction: column;
     justify-content: end;
 }
+
+.leftGrip {
+    transform: rotate(10deg);
+    border-radius: 50% 45% 50% 50%;
+}
+
+.rightGrip {
+    transform: rotate(-10deg);
+    border-radius: 45% 50% 50% 50%;
+}
+
+.bottomGrip {
+    width: 5.5em;
+    height: 8em;
+    border-radius: 0 0 50% 50%;
+    background: linear-gradient(0deg, rgb(37, 0, 0), darkred 20%, darkred 90%, red);
+    display: flex;
+    flex-direction: row;
+}
+
+.semiCircle {
+    width: 5.5em;
+    height: 6em;
+    border-radius: 0 0 2.5em 2.5em;
+    background-color: red;
+}
+
+/* Shoulder of the grip (Button) */
+
+.shoulder {
+    z-index: -1;
+
+    width: 3.5em;
+    height: 1.2em;
+
+    background-color: gray;
+
+    margin-bottom: .5em;
+
+    transform: rotate(-10deg);
+}
+
+.shoulderLeft {
+    margin-left: 1em;
+    
+    border-radius: 70% 40% 0 0;
+    
+    background: linear-gradient(-10deg, red 30%, gray 45%, gray 65%, rgb(56, 56, 56) 80%, rgb(56, 56, 56) 100%);
+}
+
+.shoulderLeft:hover {
+    transform: rotate(-10deg) scale(.9);
+}
+
+.shoulderRight {
+    margin-left: .9em;
+
+    background: linear-gradient(10deg, red 30%, gray 45%, gray 65%, rgb(56, 56, 56) 80%, rgb(56, 56, 56) 100%);
+
+    transform: rotate(10deg);
+    border-radius: 40% 70% 0 0;
+}
+
+.shoulderRight:hover {
+    transform: rotate(10deg) scale(.9);
+}
+/* Red squares to solve blank spaces problem */
 
 .topLeftRed {
     width: .4em;
@@ -48,6 +126,7 @@ body {
     margin-bottom: 14.8em;
     margin-left: 4.2em;
 }
+
 
 .topRightRed {
     width: .4em;
@@ -86,71 +165,6 @@ body {
 
     margin-right: 5em;
     margin-bottom: 6.89em;
-}
-
-.bottomGrip {
-    width: 5.5em;
-    height: 8em;
-    border-radius: 0 0 50% 50%;
-    background: linear-gradient(0deg, rgb(37, 0, 0), darkred 20%, darkred 90%, red);
-    display: flex;
-    flex-direction: row;
-}
-
-.semiCircle {
-    width: 5.5em;
-    height: 6em;
-    border-radius: 0 0 2.5em 2.5em;
-    background-color: red;
-}
-
-.leftGrip {
-    transform: rotate(10deg);
-    border-radius: 50% 45% 50% 50%;
-}
-
-.rightGrip {
-    transform: rotate(-10deg);
-    border-radius: 45% 50% 50% 50%;
-
-}
-
-.shoulder {
-    z-index: -1;
-
-    width: 3.5em;
-    height: 1.2em;
-
-    background-color: gray;
-
-    margin-bottom: .5em;
-
-    transform: rotate(-10deg);
-}
-
-.shoulderLeft {
-    margin-left: 1em;
-    
-    border-radius: 70% 40% 0 0;
-    
-    background: linear-gradient(-10deg, red 30%, gray 45%, gray 65%, rgb(56, 56, 56) 80%, rgb(56, 56, 56) 100%);
-}
-
-.shoulderLeft:hover {
-    transform: rotate(-10deg) scale(.9);
-}
-
-.shoulderRight {
-    margin-left: .9em;
-
-    background: linear-gradient(10deg, red 30%, gray 45%, gray 65%, rgb(56, 56, 56) 80%, rgb(56, 56, 56) 100%);
-
-    transform: rotate(10deg);
-    border-radius: 40% 70% 0 0;
-}
-
-.shoulderRight:hover {
-    transform: rotate(10deg) scale(.9);
 }
 
 /* Buttons */
@@ -434,7 +448,7 @@ body {
     border-radius: 50%;
 
     background-color: red;
-    border: .1em solid lightsalmon;
+    border: .1em solid lightcoral;
     display: flex;
     justify-content: center;
     align-items: center;
