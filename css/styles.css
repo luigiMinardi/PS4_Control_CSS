@@ -1,10 +1,22 @@
 body {
     font-family: sans-serif;
+    background-color: #282a36;
+    transition: all 1s ease-in-out;
+
+    width: 95vw;
+    height: 95vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#example {
+    display: none;
 }
 
 .control {
-    margin-left: 1em;
-
     display: flex;
     flex-direction: row;
 }
@@ -59,8 +71,9 @@ body {
 
     transform: rotate(-10deg);
     position: absolute;
-    margin-bottom: 7em;
+
     margin-left: 5.3em;
+    margin-bottom: 6.99em;
 }
 
 .rightRed {
@@ -72,7 +85,7 @@ body {
     position: absolute;
 
     margin-right: 5em;
-    margin-bottom: 6.9em;
+    margin-bottom: 6.89em;
 }
 
 .bottomGrip {
@@ -274,6 +287,7 @@ body {
 .button:hover {
     background-color: rgb(48, 47, 47);
     transform: scale(.9);
+    cursor: pointer;
 }
 
 .button img {
@@ -341,6 +355,7 @@ body {
 .ovalButton:hover {
     background-color: rgb(48, 47, 47);
     transform: scale(.9);
+    cursor: pointer;
 }
 
 .leftOvalButton {
@@ -356,12 +371,11 @@ body {
     color: gray;
 }
 
-.touchpad {
+#touchpad {
     width: 9em;
     height: 5em;
     border-radius: 10%;
-
-    background: linear-gradient(0deg, black 70%, blue 78%, gray 90%, black 100%);
+    background: linear-gradient(0deg, black 70%, black 78%, gray 90%, black 100%);
 }
 
 /* Bottom Side */
@@ -403,6 +417,7 @@ body {
 .PSButton:hover {
     background-color: rgb(48, 47, 47);
     transform: scale(.9);
+    cursor: pointer;
 }
 
 .logo {
