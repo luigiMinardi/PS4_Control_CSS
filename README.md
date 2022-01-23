@@ -1,11 +1,12 @@
 # Welcome to my virtual PS4 control
-<a href="https://github.com/luigiMinardi/PS4_Control_CSS/blob/main/LICENSE">
-    <img alt="GitHub license" src="https://img.shields.io/badge/license-MIT-green?style=for-the-badge">
-</a>
-<img alt="Javascript Version" src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
-<img alt="HTML Version" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
-<img alt="CSS Version" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
-
+<div align="center">
+    <a href="https://github.com/luigiMinardi/PS4_Control_CSS/blob/main/LICENSE">
+        <img alt="GitHub license" src="https://img.shields.io/badge/license-MIT-green?style=for-the-badge">
+    </a>
+    <img alt="Javascript Version" src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
+    <img alt="HTML Version" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+    <img alt="CSS Version" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+</div>
 
 This is a project made entirely in HTML, CSS and JS. The objective of the project was to made a PS4 control using just CSS. I did it and added some features to it that you can see below.
 
